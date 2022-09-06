@@ -1,0 +1,38 @@
+function onChange(control, oldValue, newValue, isLoading) {
+   if (isLoading || newValue == '') {
+      return;
+   }
+	if(newValue == "true"){
+		
+		g_form.setValue('premise_contact_first_name',g_form.getValue('account_contact_first_name'));
+		g_form.setValue('premise_contact_middle_name',g_form.getValue('account_contact_middle_name'));
+		g_form.setValue('premise_contact_last_name',g_form.getValue('account_contact_last_name'));
+		g_form.setValue('premises_mailing_address',g_form.getValue('account_contact_address_mailing'));
+		g_form.setValue('premises_contact_address_city',g_form.getValue('account_contact_address_city'));
+		g_form.setValue('province',g_form.getValue('account_contact_address_province'));
+		g_form.setValue('premises_contact_address_postal_code',g_form.getValue('account_contact_address_postal_code'));
+		g_form.setValue('premises_contact_phone',g_form.getValue('account_primary_phone_number'));
+		g_form.setValue('premises_contact_contact_notes',g_form.getValue('account_contact_contact_notes'));
+		g_form.setValue('premises_alternative_phone_number',g_form.getValue('account_alternative_phone_number'));
+		g_form.setValue('premises_contact_email',g_form.getValue('account_contact_email'));
+		g_form.setValue('premises_contact_fax',g_form.getValue('account_contact_fax'));
+		
+	}else{
+		g_form.clearValue('premise_contact_first_name');
+		g_form.clearValue('premise_contact_middle_name');
+		g_form.clearValue('premise_contact_last_name');
+		g_form.clearValue('premises_mailing_address');
+		g_form.clearValue('premises_contact_address_city');
+		g_form.clearValue('province');
+		g_form.clearValue('premises_contact_address_postal_code');
+		g_form.clearValue('premises_contact_phone');
+		g_form.clearValue('premises_contact_contact_notes');
+		g_form.clearValue('premises_alternative_phone_number');
+		g_form.clearValue('premises_contact_email');
+		g_form.clearValue('premises_contact_fax');
+		
+	}
+
+   //Type appropriate comment here, and begin script below
+   
+}
